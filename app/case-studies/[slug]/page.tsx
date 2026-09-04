@@ -46,7 +46,7 @@ export default async function CaseStudyDetail({
 
             <h1 className="text-[clamp(32px,5vw,60px)] font-extrabold tracking-tight leading-[1.05] mb-8 break-normal">
               <span>
-                A clearer web experience for a business ready to move forward."
+                A clearer web experience for a business ready to move forward.
               </span>
             </h1>
 
