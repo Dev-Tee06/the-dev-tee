@@ -34,7 +34,7 @@ export default async function CaseStudyDetail({ params }: { params: Promise<{ sl
             </AnimatedSection>
             
             <h1 className="text-[clamp(32px,5vw,60px)] font-extrabold tracking-tight leading-[1.05] mb-8 break-normal">
-              <RevealText text="A clearer web experience for a business ready to move forward." delay={0.3} />
+              <RevealText text="A\u00A0clearer web experience for a business ready to move forward." delay={0.3} />
             </h1>
             
             <AnimatedSection delay={0.6}>
