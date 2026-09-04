@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { AnimatedSection } from "@/components/ui/animations/AnimatedSection";
 import { RevealText } from "@/components/ui/animations/RevealText";
 import { RevealImage } from "@/components/ui/animations/RevealImage";
+import { Span } from "next/dist/trace";
 
 export async function generateMetadata({
   params,
@@ -44,10 +45,9 @@ export default async function CaseStudyDetail({
             </AnimatedSection>
 
             <h1 className="text-[clamp(32px,5vw,60px)] font-extrabold tracking-tight leading-[1.05] mb-8 break-normal">
-              <RevealText
-                text="A clearer web experience for a business ready to move forward."
-                delay={0.3}
-              />
+              <span>
+                A clearer web experience for a business ready to move forward."
+              </span>
             </h1>
 
             <AnimatedSection delay={0.6}>
