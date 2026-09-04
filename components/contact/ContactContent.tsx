@@ -7,7 +7,6 @@ import { FormField } from "@/components/ui/FormField";
 import { useForm } from "react-hook-form";
 import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedSection } from "@/components/ui/animations/AnimatedSection";
-import { InstagramIcon, WhatsAppIcon, EmailIcon } from "@/components/ui/Icons";
 
 type FormData = {
   fullName: string;
@@ -243,16 +242,12 @@ export const ContactContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimatedSection delay={0.1}>
               <div className="p-8 border border-border-subtle rounded hover:border-electric transition-colors duration-300 h-full">
-                <h3 className="flex items-center font-bold text-navy text-xl mb-4">
-                  <InstagramIcon className="w-5 h-5 mr-3 text-electric" />
-                  Instagram
-                </h3>
+                <h3 className="font-bold text-navy text-xl mb-4">Instagram</h3>
                 <p className="text-text-muted text-sm leading-relaxed mb-6">
                   Follow DEV-TEE and explore work, ideas, and perspectives.
                 </p>
                 <a
                   href="https://www.instagram.com/the_devtee?igsi=MXY5OTNzYjc0ZG9wcQ%3D%3D&utm_source=qr"
-                  target="_blank" rel="noopener noreferrer"
                   className="font-bold text-electric text-sm hover:underline"
                 >
                   @the_devtee →
@@ -262,15 +257,12 @@ export const ContactContent = () => {
 
             <AnimatedSection delay={0.2}>
               <div className="p-8 border border-border-subtle rounded hover:border-electric transition-colors duration-300 h-full">
-                <h3 className="flex items-center font-bold text-navy text-xl mb-4">
-                  <EmailIcon className="w-5 h-5 mr-3 text-electric" />
-                  Email
-                </h3>
+                <h3 className="font-bold text-navy text-xl mb-4">Email</h3>
                 <p className="text-text-muted text-sm leading-relaxed mb-6">
                   For project enquiries, partnerships, or technical questions.
                 </p>
                 <a
-                  href="mailto:dev.tee01@gmail.com"
+                  href="dev.tee01@gmail.com"
                   className="font-bold text-electric text-sm hover:underline"
                 >
                   dev.tee01@gmail.com →
@@ -280,16 +272,14 @@ export const ContactContent = () => {
 
             <AnimatedSection delay={0.3}>
               <div className="p-8 border border-border-subtle rounded hover:border-electric transition-colors duration-300 h-full">
-                <h3 className="flex items-center font-bold text-navy text-xl mb-4">
-                  <WhatsAppIcon className="w-5 h-5 mr-3 text-electric" />
+                <h3 className="font-bold text-navy text-xl mb-4">
                   WhatsApp / Phone
                 </h3>
                 <p className="text-text-muted text-sm leading-relaxed mb-6">
                   For direct conversations and quick enquiries.
                 </p>
                 <a
-                  href="https://wa.link/rounwp"
-                  target="_blank" rel="noopener noreferrer"
+                  href="https://wa.link/15qh7b"
                   className="font-bold text-electric text-sm hover:underline"
                 >
                   07061158745 →
