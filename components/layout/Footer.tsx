@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Container } from "../ui/Container"
+import { InstagramIcon, WhatsAppIcon, EmailIcon } from "../ui/Icons"
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -34,13 +35,24 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 uppercase text-xs tracking-widest text-gray-500">Connect</h4>
             <ul className="space-y-3">
-              {["Instagram", "WhatsApp", "Email"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="https://www.instagram.com/the_devtee?igsi=MXY5OTNzYjc0ZG9wcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors text-sm font-medium">
+                  <InstagramIcon className="w-4 h-4" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.link/rounwp" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors text-sm font-medium">
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:dev.tee01@gmail.com" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors text-sm font-medium">
+                  <EmailIcon className="w-4 h-4" />
+                  <span>Email</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

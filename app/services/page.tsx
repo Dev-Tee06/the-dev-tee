@@ -13,12 +13,13 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { num: "01", title: "Web Strategy", desc: "Clarify what the business stands for and how it should communicate online." },
-  { num: "02", title: "Website Design", desc: "Custom interfaces designed around the business, audience, and desired outcome." },
-  { num: "03", title: "Next.js Development", desc: "High-performance, scalable web architecture built for the modern web." },
-  { num: "04", title: "SEO & Search", desc: "Build a search-ready foundation that helps the right audience discover the business." },
-  { num: "05", title: "Conversion Optimization", desc: "Improve journeys and messaging to increase meaningful actions." },
-  { num: "06", title: "Business Web Solutions", desc: "Dashboards, portals, and web systems where a standard website isn't enough." }
+  { num: "01", title: "WEBSITE DESIGN & DEVELOPMENT", desc: "We design and develop modern, responsive websites that communicate your value clearly and give your business a strong digital presence." },
+  { num: "02", title: "BRAND CLARITY & DIGITAL POSITIONING", desc: "We help businesses define their message, communicate their value, and position themselves clearly so the right customers understand why they should choose them." },
+  { num: "03", title: "WEBSITE REDESIGN & OPTIMIZATION", desc: "We transform outdated, confusing, or underperforming websites into clean, modern experiences designed around your business goals and customer needs." },
+  { num: "04", title: "SEO & DIGITAL DISCOVERABILITY", desc: "We optimize your website and content to improve search visibility, help potential customers find your business, and build a stronger presence across search engines." },
+  { num: "05", title: "CONVERSION OPTIMIZATION", desc: "We improve the journey from visitor → interest → action by optimizing your website’s structure, messaging, calls-to-action, and user experience to generate more enquiries, bookings, purchases, or leads." },
+  { num: "06", title: "DIGITAL BUSINESS SOLUTIONS", desc: "We build practical digital systems that solve specific business problems — from customer interactions and bookings to forms, dashboards, workflows, and other tools that make operations more efficient." },
+  { num: "07", title: "WEBSITE MAINTENANCE & GROWTH", desc: "We don’t just build and leave. We help businesses maintain, improve, update, and scale their digital platforms as their needs and goals evolve." }
 ]
 
 export default function ServicesPage() {

@@ -24,8 +24,11 @@ export const Process = () => {
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
 
   return (
-    <section ref={containerRef} className="py-24 md:py-32 bg-surface-dark text-white border-y border-gray-800 relative">
-      <Container>
+    <section ref={containerRef} className="py-24 md:py-32 bg-navy text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-navy/65 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-br from-electric/20 via-transparent to-transparent z-0" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px] z-0 pointer-events-none" />
+      <Container className="relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-20">
           <SectionLabel className="mb-6 block text-electric">OUR PROCESS</SectionLabel>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">

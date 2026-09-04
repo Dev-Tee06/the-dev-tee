@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-offwhite text-text-primary font-sans">
         <Navbar />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow pt-[61px]">
           {children}
         </main>
         <Footer />

@@ -58,16 +58,15 @@ export const Hero = () => {
                 ease: [0.25, 1, 0.5, 1],
               }}
             >
-              WE BUILD{" "}
+              WE BUILD BUSINESS EXPERIENCES THAT{" "}
               <motion.span
                 initial={{ color: "#ffffff", filter: "blur(4px)" }}
                 animate={{ color: "#2563EB", filter: "blur(0px)" }}
                 transition={{ duration: 1, delay: 1.2 }}
                 className="inline-block"
               >
-                BUSINESS
-              </motion.span>{" "}
-              EXPERIENCES THAT MOVE YOUR BUSINESS FORWARD.
+                MOVE YOUR BUSINESS FORWARD.
+              </motion.span>
             </motion.div>
           </h1>
 

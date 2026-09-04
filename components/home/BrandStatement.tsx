@@ -28,7 +28,7 @@ export const BrandStatement = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight">
               EXCELLENCE IN EXECUTION. <br className="hidden md:block" />
-              <span className="text-gray-400">TRUST IN EVERY EXPERIENCE.</span>
+              <span className="text-electric">TRUST IN EVERY EXPERIENCE.</span>
             </h2>
           </div>
         </AnimatedSection>

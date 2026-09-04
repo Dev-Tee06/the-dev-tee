@@ -48,8 +48,8 @@ export default function CaseStudiesPage() {
                 <div className="w-full md:w-1/2 overflow-hidden rounded-md relative cursor-pointer">
                   <Link href={`/case-studies/${study.slug}`}>
                     <RevealImage delay={0.1}>
-                      <div className={`w-full aspect-[4/3] rounded-md ${study.imageColor} transition-transform duration-700 ease-out group-hover:scale-[1.03] flex items-center justify-center relative overflow-hidden`} >
-                         <span className="text-white/20 font-bold text-xl">[ {study.client} Image ]</span>
+                      <div className="w-full aspect-[4/3] rounded-md transition-transform duration-700 ease-out group-hover:scale-[1.03] relative overflow-hidden bg-gray-100" >
+                         <img src={study.image} alt={study.client} className="absolute inset-0 w-full h-full object-cover object-top" />
                          <div className="absolute inset-0 bg-gradient-to-tr from-electric/0 via-electric/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                       </div>
                     </RevealImage>
@@ -62,7 +62,8 @@ export default function CaseStudiesPage() {
                       <div className="text-xs font-bold text-text-muted uppercase tracking-widest mb-2 transition-colors duration-500 group-hover:text-electric">{study.industry}</div>
                     </AnimatedSection>
                     <AnimatedSection delay={0.3}>
-                      <h2 className="text-3xl md:text-4xl font-bold text-navy">{study.client}</h2>
+                      <h2 className="text-3xl md:text-4xl font-bold text-navy mb-2">{study.client}</h2>
+                      <h3 className="text-lg md:text-xl font-medium text-text-muted">{study.title}</h3>
                     </AnimatedSection>
                   </div>
                   
