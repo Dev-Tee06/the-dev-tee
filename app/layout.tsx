@@ -11,20 +11,16 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "DEV-TEE | Business Website Design, Development & Web Strategy",
-  description: "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
+  description:
+    "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${manrope.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${manrope.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-offwhite text-text-primary font-sans">
         <Navbar />
-        <main className="flex-grow pt-[61px]">
-          {children}
-        </main>
+        <main className="flex-grow pt-[61px] sm:pt-[70px]">{children}</main>
         <Footer />
       </body>
     </html>
