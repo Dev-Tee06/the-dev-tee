@@ -30,10 +30,31 @@ export const ContactContent = () => {
   const [contactFocused, setContactFocused] = useState(false);
 
   const onSubmit = async (data: FormData) => {
+    if (data.preferredContact === "WhatsApp") {
+      const text = `Hi, I'm ${data.fullName}${data.business ? ` from ${data.business}` : ''}.\n\nI need help with: ${data.helpTopic}\nProject Details: ${data.projectDetails}\n\nMy Email: ${data.email}\nMy Phone: ${data.phone}`;
+      window.open(`https://wa.me/2347061158745?text=${encodeURIComponent(text)}`, "_blank");
+      // Still allow the form to show success state after opening WhatsApp
+      return;
+    }
+
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formsubmit.co/ajax/dev.tee01@gmail.com", {
         method: "POST",
-        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          "Client Name": data.fullName,
+          "Business Name": data.business || "N/A",
+          "Email Address": data.email,
+          "Phone Number": data.phone || "N/A",
+          "Service Requested": data.helpTopic,
+          "Project Details": data.projectDetails,
+          "Preferred Contact": data.preferredContact,
+          _subject: `New Lead: ${data.helpTopic} from ${data.fullName}`,
+          _template: "box", // This styles the email as a clean, organized card
+        }),
       });
       if (!res.ok) throw new Error("Submission failed");
     } catch (e) {

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { caseStudies, blogPosts } from '@/lib/data'
+import { caseStudies } from '@/lib/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://dev-tee.com'
@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/services',
     '/case-studies',
-    '/blog',
     '/contact',
     '/privacy',
     '/terms',
@@ -27,12 +26,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const blogRoutes = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  return [...routes, ...caseStudyRoutes, ...blogRoutes]
+  return [...routes, ...caseStudyRoutes]
 }
