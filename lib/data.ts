@@ -94,7 +94,7 @@ export const caseStudies = [
   {
     slug: "eunice-samson",
     client: "Eunice Samson",
-    title: "Personal Brand & Strategic Copywriting Website",
+    title: "Personal Brand & Strategic Copywriting Website (Website Redesign Sample)",
     industry: "Copywriting / Content & Brand Communication",
     challenge:
       "Eunice needed a digital presence that could clearly communicate her writing expertise, personality, services, and value while standing out in a competitive creative industry.",

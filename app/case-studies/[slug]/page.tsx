@@ -46,7 +46,7 @@ export default async function CaseStudyDetail({
 
             <h1 className="text-[clamp(32px,5vw,60px)] font-extrabold tracking-tight leading-[1.05] mb-8 break-normal">
               <span>
-                A clearer web experience for a business ready to move forward.
+                A Clearer Web Experience for a business ready to move forward.
               </span>
             </h1>
 
@@ -97,15 +97,66 @@ export default async function CaseStudyDetail({
       <section className="py-24 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto space-y-16">
-            <RevealImage>
-              <div className="w-full aspect-[21/9] rounded-xl mb-12 relative overflow-hidden bg-gray-100 shadow-xl border border-border-subtle">
-                <img
-                  src={study.image}
-                  alt={study.client}
-                  className="absolute inset-0 w-full h-full object-cover object-top"
-                />
+            {study.slug === "eunice-samson" ? (
+              <div className="mb-12 space-y-12">
+                <AnimatedSection>
+                  <h2 className="text-3xl font-bold text-navy mb-6">
+                    Website Redesign Transformation
+                  </h2>
+                  <p className="text-text-muted text-lg leading-relaxed mb-8">
+                    When redesigning the Ilesanmi Eunice platform, we took
+                    careful note of the need for stronger visual hierarchy,
+                    clearer content structure, and a more compelling aesthetic.
+                    The former design functioned but lacked the premium,
+                    authoritative feel necessary for a strategic copywriter. In
+                    our new implementation, we introduced a sophisticated
+                    layout, enhanced typography, and cohesive storytelling that
+                    better reflects her brand identity and guides the user
+                    effortlessly toward client inquiry.
+                  </p>
+                </AnimatedSection>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <RevealImage>
+                    <div className="flex flex-col space-y-4">
+                      <h3 className="text-xl font-bold text-navy text-center">
+                        Former Design (Before)
+                      </h3>
+                      <div className="w-full aspect-square md:aspect-[4/5] rounded-xl relative overflow-hidden bg-gray-100 shadow-xl border border-border-subtle">
+                        <img
+                          src={study.image}
+                          alt={`${study.client} Before`}
+                          className="absolute inset-0 w-full h-full object-cover object-top"
+                        />
+                      </div>
+                    </div>
+                  </RevealImage>
+                  <RevealImage>
+                    <div className="flex flex-col space-y-4">
+                      <h3 className="text-xl font-bold text-navy text-center">
+                        Current Design (After)
+                      </h3>
+                      <div className="w-full aspect-square md:aspect-[4/5] rounded-xl relative overflow-hidden bg-gray-100 shadow-xl border border-border-subtle">
+                        <img
+                          src="/case6.png"
+                          alt={`${study.client} After`}
+                          className="absolute inset-0 w-full h-full object-cover object-top"
+                        />
+                      </div>
+                    </div>
+                  </RevealImage>
+                </div>
               </div>
-            </RevealImage>
+            ) : (
+              <RevealImage>
+                <div className="w-full aspect-[21/9] rounded-xl mb-12 relative overflow-hidden bg-gray-100 shadow-xl border border-border-subtle">
+                  <img
+                    src={study.image}
+                    alt={study.client}
+                    className="absolute inset-0 w-full h-full object-cover object-top"
+                  />
+                </div>
+              </RevealImage>
+            )}
 
             <div className="prose prose-lg max-w-none text-text-primary">
               <AnimatedSection>
@@ -114,10 +165,10 @@ export default async function CaseStudyDetail({
                 </h2>
                 <p className="mb-10 text-text-muted text-lg leading-relaxed">
                   Before any design or code was executed, we took the time to
-                  fundamentally understand {study.client}’s operations and
-                  market position. A web experience shouldn't just exist—it must
-                  serve a strategic business purpose and clearly communicate
-                  value.
+                  fundamentally understand {study.client}&apos;s operations and
+                  market position. A web experience shouldn&apos;t just exist—it
+                  must serve a strategic business purpose and clearly
+                  communicate value.
                 </p>
               </AnimatedSection>
 
@@ -151,8 +202,8 @@ export default async function CaseStudyDetail({
                 <p className="text-text-muted text-lg leading-relaxed">
                   The final build combined high-performance engineering with a
                   polished, conversion-focused interface. {study.outcome} We
-                  didn't just build a website; we delivered a scalable digital
-                  asset that drives measurable value and positions{" "}
+                  didn&apos;t just build a website; we delivered a scalable
+                  digital asset that drives measurable value and positions{" "}
                   {study.client} as an authority.
                 </p>
               </AnimatedSection>
