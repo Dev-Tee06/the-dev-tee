@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     "Web Strategy",
     "SEO",
     "Business Websites",
-    "Digital Agency"
+    "Digital Agency",
   ],
   authors: [{ name: "DEV-TEE" }],
   creator: "DEV-TEE",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://dev-tee.com",
+    url: "https://dev-tee.org",
     title: "DEV-TEE | Business Website Design, Development & Web Strategy",
     description:
       "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",

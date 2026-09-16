@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { caseStudies } from '@/lib/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dev-tee.com'
+  const baseUrl = 'https://dev-tee.org'
 
   const routes = [
     '',
