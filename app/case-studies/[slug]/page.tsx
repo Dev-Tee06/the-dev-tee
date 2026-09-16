@@ -17,7 +17,7 @@ export async function generateMetadata({
   const study = caseStudies.find((s) => s.slug === resolvedParams.slug);
   if (!study) return { title: "Not Found" };
   return {
-    title: `${study.client} Case Study | DEV-TEE`,
+    title: `${study.client} Case Study | dev-tee.org`,
     description: study.challenge,
   };
 }

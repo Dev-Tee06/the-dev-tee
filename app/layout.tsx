@@ -10,9 +10,10 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "DEV-TEE | Business Website Design, Development & Web Strategy",
+  metadataBase: new URL("https://dev-tee.org"),
+  title: "dev-tee.org | Business Website Design, Development & Web Strategy",
   description:
-    "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
+    "dev-tee.org helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
   keywords: [
     "Web Design",
     "Web Development",
@@ -21,30 +22,30 @@ export const metadata: Metadata = {
     "Business Websites",
     "Digital Agency",
   ],
-  authors: [{ name: "DEV-TEE" }],
-  creator: "DEV-TEE",
+  authors: [{ name: "dev-tee.org" }],
+  creator: "dev-tee.org",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://dev-tee.org",
-    title: "DEV-TEE | Business Website Design, Development & Web Strategy",
+    title: "dev-tee.org | Business Website Design, Development & Web Strategy",
     description:
-      "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
-    siteName: "DEV-TEE",
+      "dev-tee.org helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
+    siteName: "dev-tee.org",
     images: [
       {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "DEV-TEE Brand Logo",
+        alt: "dev-tee.org Brand Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DEV-TEE | Business Website Design, Development & Web Strategy",
+    title: "dev-tee.org | Business Website Design, Development & Web Strategy",
     description:
-      "DEV-TEE helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
+      "dev-tee.org helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
     images: ["/logo.jpg"],
   },
   icons: {

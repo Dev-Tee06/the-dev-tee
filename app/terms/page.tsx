@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | DEV-TEE",
+  title: "Terms of Service | dev-tee.org",
   description: "Terms of service for DEV-TEE.",
 }
 

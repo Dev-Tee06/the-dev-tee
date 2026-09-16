@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DEV-TEE",
+  title: "Privacy Policy | dev-tee.org",
   description: "Privacy policy and data handling practices for DEV-TEE.",
 }
 

@@ -10,7 +10,7 @@ import { RevealImage } from "@/components/ui/animations/RevealImage"
 import { RevealText } from "@/components/ui/animations/RevealText"
 
 export const metadata: Metadata = {
-  title: "Website & Web Experience Case Studies | DEV-TEE",
+  title: "Website & Web Experience Case Studies | dev-tee.org",
   description: "Explore how strategy, design, and technology come together to turn business challenges into useful web experiences.",
 }
 

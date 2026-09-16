@@ -8,7 +8,7 @@ import { AnimatedSection } from "@/components/ui/animations/AnimatedSection"
 import { RevealText } from "@/components/ui/animations/RevealText"
 
 export const metadata: Metadata = {
-  title: "Services | DEV-TEE",
+  title: "Services | dev-tee.org",
   description: "Web strategy, design, and development services.",
 }
 
