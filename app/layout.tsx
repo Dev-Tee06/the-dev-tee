@@ -11,7 +11,10 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dev-tee.org"),
-  title: "dev-tee.org | Business Website Design, Development & Web Strategy",
+  title: {
+    default: "dev-tee.org | Business Website Design, Development & Web Strategy",
+    template: "%s | dev-tee.org",
+  },
   description:
     "dev-tee.org helps businesses build clearer, faster, more effective websites through strategy, design, development, SEO, and ongoing optimization.",
   keywords: [
@@ -24,6 +27,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "dev-tee.org" }],
   creator: "dev-tee.org",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://dev-tee.org",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
